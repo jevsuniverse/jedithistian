@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jedith Almando Istian</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Move to up button -->
+    <!-- navgaition menu -->
+    <nav >
+      <div class="navbar fixed-top">
+        <div class="logo"><a href="index.html">JedithIstian.</a></div>
+
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+      
+    <main id="project">
+      <div style="margin-top: 7rem;" class="container-fluid container-lg py-2 py-md-3 py-lg-4">
+          <div class="row min-vh-90">
+              <div class="col-12 col-md-4 text-justify">
+                  <h5 id="title" class="fw-bolder">SellQueen</h5>
+                  <!-- year -->
+                  <div class="mt-4 mt-md-5">
+                      <h6 class="fw-bolder">Year</h6>
+                      <p id="year" >Jun 2023</p>
+                  </div>
+                  <!-- role -->
+                  <div class="mt-4">
+                      <h6 class="fw-bolder">Role</h6>
+                      <span id="role">Leader</span>
+                      <br>
+                          <span id="work">( UI/UX Developer &amp; Front End Developer )</span></p>
+                  </div>
+                  <!-- publication link -->
+                  <div class="mt-4">
+                      <h6 class="fw-bolder">Publication Link</h6>
+                      <div id="links" class="d-flex flex-column">
+                      <a style="width: fit-content;" class="text-dark mb-2 text-break" href="https://github.com/jevsuniverse/SellQueen-Website.git" id="githubLink">jevsuniverse/SellQueen-Website</a></div>
+                  </div>
+              </div>
+              <div class="col text-justify mt-2 mt-md-0">
+                  <h6 class="fw-bolder">Project Description</h6>
+                  <p id="desc">
+                    SellQueen is a team of three members focused on creating a web platform designed specifically for thrift enthusiasts. Our platform enables thrift lovers not only to purchase affordable items but also to sell their own belongings. We serve as the primary destination for those seeking budget-friendly and unique items and for those who wish to share their collections with the thrift community.</p>
+
+                  <div id="photos" class="row row-cols-1 row-cols-lg-2 justify-content-center text-center g-3">
+                  <div class="col d-flex justify-content-center align-items-center">
+                  <img class="img-fluid" src="image/sel1.png" style="max-height:25rem;">
+              </div><div class="col d-flex justify-content-center align-items-center">
+                  <img class="img-fluid" src="image/sel2.png" style="max-height:25rem;">
+              </div>
+
+            </div>
+              </div>
+          </div>
+      </div>
+  </main>
+
+    <!-- Footer Section Start -->
+    <footer class="fixed-bottom">
+      <div class="text">
+        <span>Created By <a href="#">Jedithistian</a> | &#169; 2023 All Rights Reserved</span>
+      </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      document.getElementById("githubLink").addEventListener("click", function(e) {
+             e.preventDefault(); // Mencegah link dari mengarahkan ke halaman baru
+             
+             // Mengambil URL dari tautan GitHub
+             var url = this.getAttribute("href");
+             
+             // Mencari atau membuka tab kedua jika sudah ada
+             var existingTab = window.open(url, "_blank", "noopener,noreferrer");
+             if (existingTab) {
+                 // Jika tab kedua sudah ada, fokus pada tab tersebut
+                 existingTab.focus();
+             }
+         });
+       </script>
+  </body>
+  </body>
+</html>
