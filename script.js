@@ -69,7 +69,7 @@ $('a.nav-link').click(function (e) {
   scrollTo(href);
 });
 
-const textArray = ["Database Engineer", "Data Analyst", "Frontend", "UI/UX"];
+const textArray = ["Database Engineer", "Data Analyst", "Front End", "UI/UX"];
 const typingDelay = 90; // Delay in milliseconds between typing characters
 const newTextDelay = 400; // Delay in milliseconds before typing the next text
 let textIndex = 0;
