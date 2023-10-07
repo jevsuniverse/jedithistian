@@ -512,3 +512,12 @@ nav a, footer a{
 .icon-large {
   font-size: 50px; /* Ubah ukuran ikon sesuai keinginan Anda */
 }
+
+
+.text-three {
+  font-size: 24px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #000;
+}

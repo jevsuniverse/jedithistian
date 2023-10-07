@@ -68,3 +68,41 @@ $('a.nav-link').click(function (e) {
   
   scrollTo(href);
 });
+
+const textArray = ["Database Engineer", "Data Analyst", "Frontend", "UI/UX"];
+const typingDelay = 90; // Delay in milliseconds between typing characters
+const newTextDelay = 400; // Delay in milliseconds before typing the next text
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+const typingText = document.getElementById('typing-text');
+
+function type() {
+    if (charIndex < textArray[textIndex].length) {
+        typingText.textContent = textArray[textIndex].substring(0, charIndex + 1) + '|';
+        charIndex++;
+        setTimeout(type, typingDelay);
+    } else {
+        setTimeout(erase, newTextDelay);
+    }
+}
+
+function erase() {
+    if (charIndex >= 0) {
+        typingText.textContent = textArray[textIndex].substring(0, charIndex) + '|';
+        charIndex--;
+        setTimeout(erase, typingDelay);
+    } else {
+        textIndex++;
+        if (textIndex >= textArray.length) {
+            textIndex = 0;
+        }
+        setTimeout(type, newTextDelay);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(type, newTextDelay);
+});
+
