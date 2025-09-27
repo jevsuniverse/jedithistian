@@ -1,279 +1,442 @@
 <!DOCTYPE html>
 <!-- Website - www.codingnepalweb.com -->
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Jedith Almando Istian</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-  <body>
-    <!-- Move to up button -->
-    <div class="scroll-button">
-      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Jedith Almando Istian</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+  .skill-box {
+    padding: 15px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  .skill-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .skill-img {
+    max-height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+  .skill-box p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .skills {
+    background-color: #f0f8ff;
+    /* warna biru */
+    padding: 60px 80px;
+    /* atas-bawah 60px, kiri-kanan 80px */
+  }
+
+  .skills .container {
+    max-width: 1200px;
+    /* biar gak full mepet kiri-kanan */
+    margin: 0 auto;
+    /* center */
+  }
+
+  .subtitle-year {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    /* bisa diganti warna sesuai tema */
+    margin: 5px 0 20px 10px;
+    /* jarak biar agak turun sedikit */
+  }
+</style>
+
+<body>
+  <!-- Move to up button -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- navgaition menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="index.html">Jedith.Istian</a></div>
+      <ul class="menu mb-0">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#services" class="nav-link">Project</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times mb-0"></i>
+        </div>
+      </ul>
+      <div class="media-icons">
+        <a href="https://www.linkedin.com/in/jedithistian/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/accounts/onetap/?next=%2F" target="_blank"><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://github.com/jevsuniverse" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
     </div>
-    <!-- navgaition menu -->
-    <nav>
-      <div class="navbar">
-        <div class="logo"><a href="index.html">JedithIstian.</a></div>
-        <ul class="menu mb-0">
-          <li><a href="#home"class="nav-link">Home</a></li>
-          <li><a href="#about"class="nav-link">About</a></li>
-          <li><a href="#skills"class="nav-link">Skills</a></li>
-          <li><a href="#services"class="nav-link">Project</a></li>
-          <li><a href="#contact"class="nav-link">Contact</a></li>
-          <div class="cancel-btn">
-            <i class="fas fa-times mb-0"></i>
-          </div>
-        </ul>
-        <div class="media-icons">
-          <a href="https://www.linkedin.com/in/jedithistian/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/accounts/onetap/?next=%2F"target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://github.com/jevsuniverse" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-      <div class="menu-btn mb-0">
-        <i class="fas fa-bars mb-0"></i>
-      </div>
-    </nav>
-    <main></main>
+    <div class="menu-btn mb-0">
+      <i class="fas fa-bars mb-0"></i>
+    </div>
+  </nav>
+  <main></main>
 
-    <!-- Home Section Start -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <div class="text">
-          <div class="text-one">Hello,</div>
-          <div class="text-two">I'm Jedith Almando Istian</div>
-          <div class="text-three border border-0" id="typing-text"></div>
-
-
-          <div class="text-four">From Indonesia</div>
-        </div>
-        <div class="button">
-          <a href="#about"class="nav-link"><button>Hire Me</button> </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section Start -->
-    <section class="about" id="about">
-      <div class="content">
-        <div class="title"><span>About Me</span></div>
-        <div class="about-details">
-          <div class="left">
-            <img src="image/palingganteng.jpg" alt="" />
-          </div>
-          <div class="right">
-            <div class="topic">The Data Never Lies</div>
-            <p> 
-              Computer Science student at Bina Nusantara University. Actively participate in training and certification such as Intro to Machine Learning at Kaggle, R Fundamental for Data Science and Introduction to Data Science with R at DQlab, Exploring SAP Analytics Cloud at SAP, Introduction to Cloud at Cognitive Class, SQL (Intermediate) at HackerRank , Web Pentest & Bug Bounty Hunting at Jadi Hacker, and UI/UX Design at Bina Nusantara Computer Club. Have a passion and desire to work in the IT field, especially in the fields of Data Analyst, or Data Engineer. Have a high curiosity, and like to learn something new. I've always been passionate about data because there's so much knowledge that I can drive from it.
-            </p>
-            <div class="button">
-              <a class="btn btn-primary" href="image\CV Intern - Jedith Almando Istian.pdf" role="button" target="_blank" id="myButton"> Download  CV </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- My Skill Section Start -->
-    <!-- Section Tag and Other Div will same where we need to put same CSS -->
-    <section class="skills " id="skills">
-      <div class="container">
-        <div class="title"><span>My Skills</span></div>
-        <div class="skills-details d-flex flex-column">
-          <div class="text d-flex">
-            <div class="experience">
-            </div>
-          </div>
-          <div class="boxes row row-cols-4 ">
-            <div class="box cal">
-                <img src="image/html.png" alt="" />          
-            </div>
-
-            <div class="box cal">
-              <img src="image/CSS1.png" alt="" />
-            </div>
-
-          <div class="box cal">
-            <img src="image/linux.png" alt="" />
-          </div>
-
-        <div class="box cal">
-          <img src="image/pyth.png" alt="" />
-        </div>
-
-        <div class="box cal">
-          <img src="image/sql11.png" alt="" class="img-fluid"/>
-        </div>
-
-        <div class="box cal">
-          <img src="image/R studio.png" alt="" class="img-fluid" />
-        </div>
-     
-        <div class="box cal">
-          <img src="image/hdp.png" alt="" class="img-fluid"/>
-        </div>
-
-        <div class="box cal">
-           <img src="image/aws.png" alt="" class="img-fluid"/>
-         </div>
-            
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- My Services Section Start -->
-    <section class="services" id="services">
-      <div class="content">
-        <div class="title"><span>Project</span></div>
-        <div class="boxes">
-          <div class="box ">
-            <a href="eurika.html" class=" btn border border-0"role="button">
-              <img class="img-fluid" src="image/page1.png" style="max-height:25rem;">
-              <div class="">
-              </div>
-              <div class="topic" style="font-family: 'Poppins', sans-serif;" >Dialog Diri Website </div>
-              <p>
-                We are using a variety of essential tools and technologies to design this project, including HTML, CSS, Laravel, Bootstrap, JavaScript, and Machine Learning, which is used to implement the chatbot functionality.</p>
-            </a>
-          </div>
-           <div class="box ">
-            <a href="HCI.html" class=" btn border border-0"role="button">
-              <img class="img-fluid" src="image/Hci.png" style="max-height:25rem;">
-              <div class="">
-              </div>
-              <div class="topic">Augmented Reality Binus Card Flazz
-                </div>
-              <p>
-                In this project, we are using four essential tools: SketchUp, Unity, Figma, and the C# programming language to design and develop the project.</p>
-            </a>
-          </div>
-          <div class="box ">
-            <a href="AWS.html" class=" btn border border-0"role="button">
-              <img class="img-fluid" src="image/EC2.png" style="max-height:25rem;">
-              <div class="">
-              </div>
-              <div class="topic">Deploy Menggunakan AWS</div>
-              <p>
-                In this project, I am using various essential tools and technologies to deploy my website, namely AWS (Amazon Web Services).</p>
-            </a>
-          </div>
-          <div class="box ">
-            <a href="sell.html" class=" btn border border-0"role="button">
-              <img class="img-fluid" src="image/sel1.png" style="max-height:25rem;">
-              <div class="">
-              </div>
-              <div class="topic">SellQueen Website</div>
-              <p>In this project, we are using a variety of essential tools and technologies to design it, including HTML, CSS, Bootstrap, JavaScript, and Django (as the backend).</p>
-            </a>
-          </div>
-          <div class="box ">
-            <a href="DatabasePsi.html" class=" btn border border-0"role="button">
-              <img class="img-fluid" src="image/Db1.png" style="max-height:25rem;">
-              <div class="">
-              </div>
-              <div class="topic">Database Psikolog</div>
-              <p>In this project, we are using a variety of essential tools and technologies to design it, including HTML, CSS, Bootstrap, XAMPP, and Laravel (as the backend).</p>
-            </a>
-          </div>
-          <div class="box ">
-            <a href="Datavisualisasi.html" class=" btn border border-0"role="button">
-              <img class="img-fluid" src="image/bg3.png" style="max-height:25rem;">
-              <div class="">
-              </div>
-              <div class="topic"> Data Visualisasi</div>
-              <p>
-                In this project, we are using a variety of essential tools and technologies to design it, including Tableau, and the data source originates from open data Jabar.</p>
-            </a>
-          </div>
-          <div class="box ">
-            <a href="WordDetection.html" class=" btn border border-0"role="button">
-              <img class="img-fluid" src="image/PictureWordDe7.png" style="max-height:25rem;">
-              <div class="">
-              </div>
-              <div class="topic"> Word Detection using python</div>
-              <p>
-                This project is useful for detecting whether sentences contain hate speech or not using Python. and compare the best algorithms for this problem (SVM, Naive Bayes, Decision tree)</p>
-            </a>
-          </div>
-          <div class="box ">
-            <a href="DNASeq.html" class=" btn border border-0"role="button">
-              <img class="img-fluid" src="image/BioTes2.png" style="max-height:25rem;">
-              <div class="">
-              </div>
-              <div class="topic"> DNA Sequence Identification using python</div>
-              <p>
-                In this project, I read a fasta file using Python. Subsequently, I analyzed the sequence based on its length, performed slicing, carried out replacements, calculated the melting temperature, computed DNA sequence keys, and created visualizations in the form of graphs.</p>
-            </a>
-          </div>
-          <div class="box ">
-            <a href="Diabetes.html" class=" btn border border-0"role="button">
-              <img class="img-fluid" src="image/CLS3.png" style="max-height:25rem;">
-              <div class="">
-              </div>
-              <div class="topic"> Data Analytics Using Logistic Regression (Spark)</div>
-              <p>
-                Analysis of this data using the Logistic Regression algorithm was carried out to predict the possibility of depression in a person based on certain variables,"Gender", "Education Level", "Married","Salary Income", "Depressed". Using this model, we can gain insight into how certain variables may influence the prediction of an individual's likelihood of depression.</p>
-            </a>
-          </div>
-          <div class="box ">
-            <a href="Rproject.html" class=" btn border border-0"role="button">
-              <img class="img-fluid" src="image/R1.png" style="max-height:25rem;">
-              <div class="">
-              </div>
-              <div class="topic"> Data Processing & Visualize Using R</div>
-              <p>
-                Reading CSV files, data preprocessing, data transformation, data mining to find associations or relationships between items using the Apriori Algorithm, and visualizing data. All of these stages use the R programming language</p>
-            </a>
-          </div>     
-          <div class="box ">
-            <a href="DataAnalytics.html" class=" btn border border-0"role="button">
-              <img class="img-fluid" src="image/DV1.png" style="max-height:30rem;">
-              <div class="">
-              </div>
-              <div class="topic">Data Analysis & Visualization Using Spark</div>
-              <p>
-                Analyze ramen data to get visualization using Spark. Using several steps such as read data, convert data, process data, and create the visualization</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Me section Start -->
-    <section class="contact" id="contact">
-      <div class="content">
-        <div class="title"><span>Contact Me</span></div>
-        <div class="text">
-          <div class="media-icons">
-            <a href="https://www.linkedin.com/in/jedithistian/" target="_blank"><i class="fab fa-linkedin icon-large" bg-secondary-subtle></i></a>
-            <a href="https://www.instagram.com/accounts/onetap/?next=%2F"target="_blank"><i class="fab fa-instagram icon-large"></i></a>
-            <a href="https://github.com/jevsuniverse" target="_blank"><i class="fab fa-github icon-large"></i></a>
-          </div>
-  
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer Section Start -->
-    <footer>
+  <!-- Home Section Start -->
+  <section class="home" id="home">
+    <div class="home-content">
       <div class="text">
-        <span>Created By <a href="#">Jedithistian</a> | &#169; 2023 All Rights Reserved</span>
+        <div class="text-one">Hello,</div>
+        <div class="text-two">I'm Jedith Almando Istian</div>
+        <div class="text-three border border-0" id="typing-text"></div>
+
+
+        <div class="text-four">From Indonesia</div>
       </div>
-    </footer>
+      <div class="button">
+        <a href="#about" class="nav-link"><button>Hire Me</button> </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section Start -->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="image/test22.jpeg" alt="" />
+        </div>
+        <div class="right">
+          <div class="topic">The Data Never Lies</div>
+          <p>
+            I am a Bachelor of Computer Science graduate from Bina Nusantara University, specializing in Database.
+            Completed a one-year internship as a Data Engineer at PT. Bumi Amartha Teknologi Mandiri, where I was
+            involved in major projects for BTPN Syariah, BCA, and Indonesia Eximbank. Gained expertise in data
+            migration, integration, and database management, as well as experience in data analysis and website
+            development. Demonstrated strong curiosity, proactivity, and enthusiasm for continuous learning and
+            contributing to impactful projects.
+          </p>
+          <div class="button">
+            <a class="btn btn-primary" href="image\CV Intern - Jedith Almando Istian.pdf" role="button" target="_blank"
+              id="myButton"> Download CV </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Skill Section Start -->
+  <section class="skills py-5 px-4" id="skills">
+    <div class="container">
+      <div class="title"><span>My Skills</span></div>
+      <div class="skills-details">
+        <div class="row justify-content-center g-4">
+
+          <div class="col-6 col-md-3">
+            <div class="skill-box text-center">
+              <img src="image/laravel1.png" alt="laravel" class="img-fluid skill-img" />
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="skill-box text-center">
+              <img src="image/boostrap.png" alt="CSS" class="img-fluid skill-img" />
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="skill-box text-center">
+              <img src="image/testssis.jpg" alt="SSIS" class="img-fluid skill-img" />
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="skill-box text-center">
+              <img src="image/pyth.png" alt="Python" class="img-fluid skill-img" />
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="skill-box text-center">
+              <img src="image/sql11.png" alt="SQL" class="img-fluid skill-img" />
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="skill-box text-center">
+              <img src="image/informatica-preview.png" alt="R" class="img-fluid skill-img" />
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="skill-box text-center">
+              <img src="image/hdp.png" alt="Hadoop" class="img-fluid skill-img" />
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="skill-box text-center">
+              <img src="image/aws.png" alt="AWS" class="img-fluid skill-img" />
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="skill-box text-center">
+              <img src="image/telend.png" alt="telend" class="img-fluid skill-img" />
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="skill-box text-center">
+              <img src="image/figmaa.png" alt="figma" class="img-fluid skill-img" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    
-  
-  </body>
-  </body>
+  <!-- My Services Section Start -->
+  <section class="services" id="services">
+    <div class="content">
+      <div class="title"><span>Project</span></div>
+      <div class="subtitle-year" style="font-weight:bold;">
+        Project 2023
+      </div>
+      <div class="boxes">
+        <div class="box ">
+          <a href="eurika.html" class=" btn border border-0" role="button">
+            <img class="img-fluid" src="image/page1.png" style="max-height:25rem;">
+            <div class="">
+            </div>
+            <div class="topic" style="font-family: 'Poppins', sans-serif;">Dialog Diri Website </div>
+            <p>
+              Project ini dirancang menggunakan berbagai tools dan teknologi penting, seperti HTML, CSS, Laravel,
+              Bootstrap, JavaScript, serta Machine Learning yang berfungsi untuk mengimplementasikan fitur chatbot.
+            </p>
+          </a>
+        </div>
+        <div class="box ">
+          <a href="HCI.html" class=" btn border border-0" role="button">
+            <img class="img-fluid" src="image/Hci.png" style="max-height:25rem;">
+            <div class="">
+            </div>
+            <div class="topic">Augmented Reality Binus Card Flazz
+            </div>
+            <p>
+              Project ini menggunakan empat tools utama, yaitu SketchUp, Unity, Figma, dan bahasa pemrograman C# untuk
+              merancang serta mengembangkan proyek.</p>
+          </a>
+        </div>
+        <div class="box ">
+          <a href="AWS.html" class=" btn border border-0" role="button">
+            <img class="img-fluid" src="image/EC2.png" style="max-height:25rem;">
+            <div class="">
+            </div>
+            <div class="topic">Deploy Menggunakan AWS</div>
+            <p>
+              Project ini menggunakan berbagai tools dan teknologi penting untuk melakukan deployment website, yaitu AWS
+              (Amazon Web Services).</p>
+          </a>
+        </div>
+        <div class="box ">
+          <a href="sell.html" class=" btn border border-0" role="button">
+            <img class="img-fluid" src="image/sel1.png" style="max-height:25rem;">
+            <div class="">
+            </div>
+            <div class="topic">SellQueen Website</div>
+            <p>Project ini menggunakan berbagai tools dan teknologi penting dalam proses perancangannya, antara lain
+              HTML, CSS, Bootstrap, JavaScript, serta Django sebagai backend.</p>
+          </a>
+        </div>
+        <div class="box ">
+          <a href="DatabasePsi.html" class=" btn border border-0" role="button">
+            <img class="img-fluid" src="image/Db1.png" style="max-height:25rem;">
+            <div class="">
+            </div>
+            <div class="topic">Database Psikolog</div>
+            <p>Project ini menggunakan berbagai tools dan teknologi penting dalam perancangannya, yaitu HTML, CSS,
+              Bootstrap, XAMPP, serta Laravel sebagai backend.</p>
+          </a>
+        </div>
+        <div class="box ">
+          <a href="Datavisualisasi.html" class=" btn border border-0" role="button">
+            <img class="img-fluid" src="image/bg3.png" style="max-height:25rem;">
+            <div class="">
+            </div>
+            <div class="topic"> Data Visualisasi</div>
+            <p>
+              Project ini menggunakan berbagai tools dan teknologi penting dalam perancangannya, yaitu Tableau, dengan
+              sumber data yang berasal dari Open Data Jabar.</p>
+          </a>
+        </div>
+        <div class="box ">
+          <a href="WordDetection.html" class=" btn border border-0" role="button">
+            <img class="img-fluid" src="image/PictureWordDe7.png" style="max-height:25rem;">
+            <div class="">
+            </div>
+            <div class="topic"> Word Detection using python</div>
+            <p>
+              Project ini berguna untuk mendeteksi apakah sebuah kalimat mengandung ujaran kebencian atau tidak dengan
+              menggunakan Python, serta membandingkan algoritma terbaik untuk permasalahan ini (SVM, Naive Bayes,
+              Decision Tree).</p>
+          </a>
+        </div>
+        <div class="box ">
+          <a href="DNASeq.html" class=" btn border border-0" role="button">
+            <img class="img-fluid" src="image/BioTes2.png" style="max-height:25rem;">
+            <div class="">
+            </div>
+            <div class="topic"> DNA Sequence Identification using python</div>
+            <p>
+              Project ini menggunakan Python untuk membaca file FASTA, menganalisis sekuens DNA, menghitung beberapa
+              parameter penting, serta menampilkan hasil dalam bentuk visualisasi grafik.</p>
+          </a>
+        </div>
+        <div class="box ">
+          <a href="Diabetes.html" class=" btn border border-0" role="button">
+            <img class="img-fluid" src="image/CLS3.png" style="max-height:25rem;">
+            <div class="">
+            </div>
+            <div class="topic"> Data Analytics Using Logistic Regression (Spark)</div>
+            <p>
+              Project ini menggunakan algoritma Logistic Regression untuk memprediksi kemungkinan depresi seseorang
+              berdasarkan variabel tertentu, serta memberikan insight mengenai pengaruh tiap variabel terhadap hasil
+              prediksi.</p>
+          </a>
+        </div>
+        <div class="box ">
+          <a href="Rproject.html" class=" btn border border-0" role="button">
+            <img class="img-fluid" src="image/R1.png" style="max-height:25rem;">
+            <div class="">
+            </div>
+            <div class="topic"> Data Processing & Visualize Using R</div>
+            <p>
+              Project ini menggunakan R untuk membaca file CSV, melakukan preprocessing dan transformasi data,
+              menerapkan Algoritma Apriori untuk menemukan asosiasi antar item, serta membuat visualisasi data.</p>
+          </a>
+        </div>
+        <div class="box ">
+          <a href="DataAnalytics.html" class=" btn border border-0" role="button">
+            <img class="img-fluid" src="image/DV1.png" style="max-height:30rem;">
+            <div class="">
+            </div>
+            <div class="topic">Data Analysis & Visualization Using Spark</div>
+            <p>
+              Project ini menganalisis data ramen untuk menghasilkan visualisasi menggunakan Spark, melalui beberapa
+              tahapan seperti membaca data, mengonversi data, memproses data, dan membuat visualisasi.</p>
+          </a>
+        </div>
+      </div>
+      <div class="subtitle-year" style="font-weight:bold;">
+        Data Engineer Internship 2024 - 2025 (PT Bumi Amartha Teknologi Mandiri)
+      </div>
+      <div class="boxes">
+        <div class="box ">
+          <a href="Btpns.html" class=" btn border border-0" role="button">
+            <img class="img-fluid" src="image/1.png" style="max-height:30rem;">
+            <div class="">
+            </div>
+            <div class="topic">Data Engineer - Data Migration</div>
+            <p>
+              Migrasi Stored Procedures dan tabel dari SQL Server ke AWS Redshift untuk membangun data warehouse BTPNS,
+              memastikan akurasi, konsistensi, serta mendukung analisis bisnis.</p>
+          </a>
+        </div>
+        <div class="box ">
+          <a href="LPEI.html" class=" btn border border-0" role="button">
+            <img class="img-fluid" src="image/2.png" style="max-height:30rem;">
+            <div class="">
+            </div>
+            <div class="topic">Data Engineer - Fund Transfer Pricing Project</div>
+            <p>
+              Mendukung proyek ARRA di Eximbank dengan fokus pada proses ETL untuk memastikan data akurat, konsisten,
+              dan siap digunakan dalam pelaporan regulatori serta internal.</p>
+          </a>
+        </div>
+        <div class="box ">
+          <a href="BCA.html" class=" btn border border-0" role="button">
+            <img class="img-fluid" src="image/3.png" style="max-height:30rem;">
+            <div class="">
+            </div>
+            <div class="topic">Data Engineer - Data Quailty</div>
+            <p>
+              Terlibat dalam proyek MDM Data Quality di BCA dengan Informatica Tools untuk meningkatkan akurasi,
+              konsistensi, dan kualitas data melalui validasi, pembersihan, standarisasi, serta optimasi ETL.</p>
+          </a>
+        </div>
+      </div>
+      <div class="subtitle-year" style="font-weight:bold;">
+        Software Engineer Skripsi 2025 (Created a school administration system at SMPTK Budimulia)
+      </div>
+      <div class="boxes">
+        <div class="box ">
+          <a href="Skripsi.html" class=" btn border border-0" role="button">
+            <img class="img-fluid" src="image/skripsi.jpeg" style="max-height:30rem;">
+            <div class="">
+            </div>
+            <div class="topic">Development of School Administration</div>
+            <p>
+              Mengembangkan aplikasi administrasi sekolah berbasis web di SMPTK Budi Mulia Gresik dengan pendekatan
+              DSDLC. Aplikasi ini mengintegrasikan data siswa, guru, staf, absensi, nilai, perpustakaan, dan keuangan
+              untuk meningkatkan efisiensi serta akurasi data.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me section Start -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Contact Me</span></div>
+      <div class="text">
+        <div class="media-icons">
+          <a href="https://www.linkedin.com/in/jedithistian/" target="_blank"><i class="fab fa-linkedin icon-large"
+              bg-secondary-subtle></i></a>
+          <a href="https://www.instagram.com/accounts/onetap/?next=%2F" target="_blank"><i
+              class="fab fa-instagram icon-large"></i></a>
+          <a href="https://github.com/jevsuniverse" target="_blank"><i class="fab fa-github icon-large"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section Start -->
+  <footer>
+    <div class="text">
+      <span>Created By <a href="#">Jedithistian</a> | &#169; 2025 All Rights Reserved</span>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+
+</body>
+</body>
+
 </html>
